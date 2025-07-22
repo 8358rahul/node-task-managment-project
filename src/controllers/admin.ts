@@ -20,7 +20,7 @@ export const assignTaskToUser = async (
     }
 
     const task = await Task.create({
-      user: userId,
+      createdBy: userId,
       title,
       description,
       priority,
